@@ -28,3 +28,23 @@
   text-align: center;
   margin: 0 auto;
 }
+
+
+@media (min-width: @tablet-width) {
+  .footer__items {
+    width: @table-container;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+    margin-bottom: 50px;
+  }
+
+  .footer__item {
+    margin-bottom: 0;
+  }
+
+  .footer__paragraph {
+    width: @table-container;
+    text-align: justify;
+  }
+}

@@ -67,3 +67,24 @@
     width: 163px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .actions {
+    position: relative;
+    width: 210px;
+    margin: 0;
+  }
+
+  .actions::after {
+    display: block;
+    position: absolute;
+    width: 408px;
+    height: 322px;
+    top: 0;
+    left: 43px;
+    content: "";
+    background-image: url("../img/sickle.png");
+    background-size: 408px 322px;
+    background-repeat: no-repeat;
+  }
+}

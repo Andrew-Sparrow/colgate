@@ -21,7 +21,7 @@
 
 @media (min-width: @tablet-width) {
   .main {
-    min-height: calc(100vh - 291px);
+    min-height: calc(100vh - 290px);
   }
 
   .main__question {
@@ -29,5 +29,17 @@
     padding-top: 60px;
     margin-bottom: 60px;
     font-size: 43px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main {
+    min-height: calc(100vh - 250px);
+  }
+
+  .main__container {
+    width: @desktop-content;
+    display: flex;
+    margin: 0 auto;
   }
 }

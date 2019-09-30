@@ -19,8 +19,8 @@
     <a class="header__link">
       <img class="header__logo" src="img/colgate-logo.png" width="135" height="68" alt="Логотип Колгейт">
     </a>
-    <nav class="navigation">
-      <ul class="navigation__list">
+    <nav class="navigation navigation--nojs">
+      <ul class="navigation__list" id="nav-list">
         <li class="navigation__item">
           <a class="navigation__link">Главная</a>
         </li>
@@ -37,11 +37,11 @@
           <a class="navigation__link">Faq</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link">Регистрация|Вход</a>
+          <a class="navigation__link">Регистрация | Вход</a>
         </li>
       </ul>
     </nav>
-    <button class="header__button">
+    <button class="header__button" onclick="myFunction()">
       <img class="header__burger" src="img/burger3.svg" width="50" height="32" alt="кнопка меню">
     </button>
   </div>
@@ -70,32 +70,32 @@
       </ul>
       <ul class="icons">
         <li class="icons__item">
-          <a class="icons__link">
+          <a class="icons__link" href="#">
             <img class="icons__img" src="img/home.png" width="84" height="82" alt="иконка ссылки">
           </a>
         </li>
         <li class="icons__item">
-          <a class="icons__link">
+          <a class="icons__link" href="#">
             <img class="icons__img" src="img/car.png" width="84" height="82" alt="иконка ссылки">
           </a>
         </li>
         <li class="icons__item">
-          <a class="icons__link">
+          <a class="icons__link" href="#">
             <img class="icons__img" src="img/bt.png" width="84" height="82" alt="иконка ссылки">
           </a>
         </li>
         <li class="icons__item">
-          <a class="icons__link">
+          <a class="icons__link" href="#">
             <img class="icons__img" src="img/phone.png" width="84" height="82" alt="иконка ссылки">
           </a>
         </li>
         <li class="icons__item">
-          <a class="icons__link">
+          <a class="icons__link" href="#">
             <img class="icons__img" src="img/shopping.png" width="87" height="87" alt="иконка ссылки">
           </a>
         </li>
         <li class="icons__item">
-          <a class="icons__link">
+          <a class="icons__link" href="#">
             <img class="icons__img" src="img/travel.png" width="93" height="92" alt="иконка ссылки">
           </a>
         </li>
@@ -130,6 +130,18 @@
     </p>
   </div>
 </footer>
+
+<script>
+  function myFunction() {
+    var nav = document.getElementById("nav-list");
+    if (nav.style.display === "block") {
+      nav.style.display = "none";
+    }
+    else {
+      nav.style.display = "block";
+    }
+  }
+</script>
 
 </body>
 </html>

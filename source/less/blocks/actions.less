@@ -26,6 +26,10 @@
   color: @red;
 }
 
+.actions__rest {
+  font-weight: 300;
+}
+
 .actions__item::before {
   display: block;
   position: absolute;
@@ -41,6 +45,7 @@
   background-repeat: no-repeat;
   color: @white;
   font-size: 30px;
+  font-weight: 300;
 }
 
 .actions__button {
@@ -52,6 +57,8 @@
   padding: 12px 23px;
   border: none;
   border-radius: 4px;
+  box-sizing: border-box;
+  font-weight: 700;
 }
 
 @media (min-width: @tablet-width) {
@@ -71,7 +78,7 @@
 @media (min-width: @desktop-width) {
   .actions {
     position: relative;
-    width: 210px;
+    width: 320px;
     margin: 0;
   }
 
@@ -81,10 +88,33 @@
     width: 408px;
     height: 322px;
     top: 0;
-    left: 43px;
+    left: 230px;
     content: "";
     background-image: url("../img/sickle.png");
     background-size: 408px 322px;
     background-repeat: no-repeat;
+  }
+
+  .actions__item {
+    width: 245px;
+    margin-left: 78px;
+    font-size: 24px;
+  }
+
+  .actions__item::before {
+    width: 58px;
+    height: 56px;
+    padding-top: 6px;
+    padding-left: 21px;
+    left: -78px;
+  }
+
+  .actions__button {
+    width: 255px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 20px;
   }
 }

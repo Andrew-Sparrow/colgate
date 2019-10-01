@@ -6,6 +6,31 @@
   display: block;
 }
 
+.navigation__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.navigation__item {
+  text-align: center;
+  border-top: 1px solid @red;
+}
+
+.navigation__item:active {
+  background-color: @red;
+}
+
+.navigation__item:active .navigation__link {
+  color: @white;
+}
+
+.navigation__link {
+  color: @red;
+  font-size: 20px;
+  line-height: 45px;
+}
+
 @media (min-width: @desktop-width) {
   .navigation {
     display: block;
@@ -21,6 +46,10 @@
     text-transform: uppercase;
     font-size: 15px;
     justify-content: flex-end;
+  }
+
+  .navigation__item {
+    border-top: none;
   }
 
   .navigation__item:nth-child(1) {
@@ -50,5 +79,9 @@
 
   .navigation__item:nth-child(6) {
     width: 186px;
+  }
+
+  .navigation__link {
+    font-size: 15px;
   }
 }

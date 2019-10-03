@@ -19,10 +19,10 @@
     <a class="header__link">
       <img class="header__logo" src="img/colgate-logo.png" width="135" height="68" alt="Логотип Колгейт">
     </a>
-    <nav class="navigation navigation--nojs">
-      <ul class="navigation__list" id="nav-list">
+    <nav class="navigation">
+      <ul class="navigation__list navigation--nojs" id="nav-list">
         <li class="navigation__item">
-          <a class="navigation__link">Главная</a>
+          <a class="navigation__link navigation__link--active">Главная</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link">О продукте</a>
@@ -40,10 +40,10 @@
           <a class="navigation__link">Регистрация | Вход</a>
         </li>
       </ul>
+      <button class="header__button" onclick="myFunction()">
+        <img class="header__hamburger" src="img/burger3.svg" width="50" height="32" alt="кнопка меню">
+      </button>
     </nav>
-    <button class="header__button" onclick="myFunction()">
-      <img class="header__hamburger" src="img/burger3.svg" width="50" height="32" alt="кнопка меню">
-    </button>
   </div>
 </header>
 <main class="main">
@@ -132,6 +132,10 @@
 </footer>
 
 <script>
+  var navigation = document.querySelector('.navigation');
+
+  navigation.classList.remove('navigation--nojs');
+
   function myFunction() {
     var nav = document.getElementById("nav-list");
     if (nav.style.display === "block") {

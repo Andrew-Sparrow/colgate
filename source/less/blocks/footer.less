@@ -16,17 +16,23 @@
 .footer__link {
   text-transform: uppercase;
   text-decoration: underline;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .footer__item {
   margin-bottom: 20px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .footer__paragraph {
   width: 265px;
   font-size: 12px;
-  text-align: center;
+  text-align: justify;
   margin: 0 auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 
@@ -41,6 +47,18 @@
 
   .footer__item {
     margin-bottom: 0;
+  }
+
+  .footer__link {
+    display: block;
+  }
+
+  .footer__item:nth-child(1) .footer__link {
+    width: 138px;
+  }
+
+  .footer__item:nth-child(2) .footer__link {
+    width: 282px;
   }
 
   .footer__paragraph {

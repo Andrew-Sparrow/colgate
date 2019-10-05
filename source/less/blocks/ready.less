@@ -1,6 +1,36 @@
+.ready__question {
+  width: 220px;
+  margin: 0 auto;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  font-family: @colgate-regular;
+  font-size: 35px;
+  color: @red;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 2px 2px 4px #00000036;
+}
+
+@media (min-width: @tablet-width) {
+  .ready__question {
+    width: initial;
+    padding-top: 60px;
+    margin-bottom: 60px;
+    font-size: 43px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .ready {
     position: relative;
     order: 2;
+    padding-top: 25px;
+  }
+
+  .ready__question {
+    margin-left: 3px;
+    margin-bottom: 96px;
+    font-size: 63px;
+    padding-top: 34px;
   }
 }

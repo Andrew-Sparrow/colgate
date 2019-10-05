@@ -67,6 +67,10 @@
   overflow-wrap: break-word;
 }
 
+.actions__hidden {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .actions {
     width: 460px;
@@ -127,10 +131,43 @@
 
   .actions__button {
     width: 255px;
+    min-height: 55px;
+    position: relative;
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 0;
     padding-right: 0;
     font-size: 20px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .actions__check {
+    width: 178px;
+    position: absolute;
+    left: 40px;
+    top: 17px;
+  }
+
+  .actions__hidden {
+    position: absolute;
+    opacity: 0;
+    left: 40px;
+    top: 17px;
+  }
+
+  .actions__button .actions__check {
+    transition: all 0.4s ease-in-out;
+  }
+
+  .actions__button:hover .actions__hidden {
+    display: initial;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .actions__button:hover .actions__check {
+    transform: scale(10);
+    opacity: 0;
   }
 }
